@@ -203,7 +203,7 @@ There's actually a bit more to that. These operators can be applied to collectio
 list3 = list | 3; // { 1, 2, 3 }
 list3 = list | 4; // { 1, 2, 3, 4 }
 int1 = list & 3; // 3
-int1 = list & 4; // 4
+int1 = list & 4; // 0
 list4 = list ^ 3; // { 1, 2 }
 list4 = list ^ 4; // { 1, 2, 3, 4 }
 ```
