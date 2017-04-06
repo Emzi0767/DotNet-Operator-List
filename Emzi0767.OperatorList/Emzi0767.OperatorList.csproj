@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0;net45;net46</TargetFrameworks>
+    <Authors>Emzi0767</Authors>
+    <Company>Emzi0767</Company>
+    <Product>Emzi0767.OperatorList</Product>
+    <Description>This package contains lists with Python-like behaviour implemented.</Description>
+    <Copyright>2017 by Emzi0767</Copyright>
+    <RepositoryType>GitHub</RepositoryType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DynamicList.cs" Condition=" '$(TargetFramework)'=='netstandard1.0' " />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="DynamicList.cs" Condition=" '$(TargetFramework)'=='netstandard1.0' " />
+  </ItemGroup>
+
+</Project>
