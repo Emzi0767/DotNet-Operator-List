@@ -88,51 +88,98 @@ namespace Emzi0767
             return this.InternalList.Contains(item);
         }
 
+        /// <summary>
+        /// Copies the contents of this <see cref="OperatorList{T}"/> to an array.
+        /// </summary>
+        /// <param name="array">Array to copy to.</param>
+        /// <param name="arrayIndex">Starting index to copy to.</param>
         public void CopyTo(T[] array, int arrayIndex)
         {
             this.InternalList.CopyTo(array, arrayIndex);
         }
 
+        /// <summary>
+        /// Gets the enumerator for this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <returns>Enumerator for this <see cref="OperatorList{T}"/>.</returns>
         public IEnumerator<T> GetEnumerator()
         {
             return this.InternalList.GetEnumerator();
         }
 
+        /// <summary>
+        /// Returns the index of specified item in this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <param name="item">Item to search for.</param>
+        /// <returns>Index of specified item, or -1 if not found.</returns>
         public int IndexOf(T item)
         {
             return this.InternalList.IndexOf(item);
         }
 
+        /// <summary>
+        /// Inserts an item at a specified index in this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <param name="index">Index to insert at.</param>
+        /// <param name="item">Item to insert.</param>
         public void Insert(int index, T item)
         {
             this.InternalList.Insert(index, item);
         }
 
+        /// <summary>
+        /// Inserts several items at a specified index in this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <param name="index">Index to insert at.</param>
+        /// <param name="items">Enumerable of items to insert.</param>
         public void InsertRange(int index, IEnumerable<T> items)
         {
             this.InternalList.InsertRange(index, items);
         }
 
+        /// <summary>
+        /// Removes a specified item from this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <param name="item">Item to remove.</param>
+        /// <returns>Whether the item was removed.</returns>
         public bool Remove(T item)
         {
             return this.InternalList.Remove(item);
         }
 
+        /// <summary>
+        /// Removes several items at specified indices in this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <param name="index">Starting index of items to remove.</param>
+        /// <param name="count">Number of items to remove.</param>
         public void RemoveRange(int index, int count)
         {
             this.InternalList.RemoveRange(index, count);
         }
 
+        /// <summary>
+        /// Removes an item at specified index in this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <param name="index">Index of the item to remove.</param>
         public void RemoveAt(int index)
         {
             this.InternalList.RemoveAt(index);
         }
 
+        /// <summary>
+        /// Gets the enumerator for this <see cref="OperatorList{T}"/>.
+        /// </summary>
+        /// <returns>Enumerator for this <see cref="OperatorList{T}"/>.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.InternalList.GetEnumerator();
         }
 
+        /// <summary>
+        /// Gets an item from specified index of this list.
+        /// </summary>
+        /// <param name="index">Index to get from.</param>
+        /// <returns>Requested item.</returns>
         public T this[int index]
         {
             get { return this.InternalList[index]; }
