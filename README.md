@@ -164,11 +164,14 @@ Ok, so during the course of your programming adventures, you prolly stumbled upo
 
 You also probably heard about sets in maths. Say, you have sets A, and B. If you haven't, let's bring you up to speed. Let's define A = { 1, 2, 3 }, and B = { 3, 4, 5 }
 
-Union of A and B equals contents of A and B sans their common part. In our case, this means that `Union(A, B) = { 1, 2, 3 } + { 3, 4, 5 } - { 3 } = { 1, 2, 3, 3, 4, 5, 6 } - { 3 } = { 1, 2, 3, 4, 5 }`
+Union of A and B equals contents of A and B sans their common part. In our case, this means that  
+`Union(A, B) = { 1, 2, 3 } + { 3, 4, 5 } - { 3 } = { 1, 2, 3, 3, 4, 5, 6 } - { 3 } = { 1, 2, 3, 4, 5 }`
 
-Intersection part of A and B equals contents of A and B sans their sum. In our case, this means that `Intersect(A, B) = { 1, 2, 3 } + { 3, 4, 5 } - { 1, 2, 3, 4, 5 } = { 1, 2, 3, 3, 4, 5 } - { 1, 2, 3, 4, 5 } = { 3 }`
+Intersection part of A and B equals contents of A and B sans their sum. In our case, this means that  
+`Intersect(A, B) = { 1, 2, 3 } + { 3, 4, 5 } - { 1, 2, 3, 4, 5 } = { 1, 2, 3, 3, 4, 5 } - { 1, 2, 3, 4, 5 } = { 3 }`
 
-Symmetric difference of A and B equals their union sans their intersection. In our case, this means that `SymmetricDiff(A, B) = Union(A, B) - Intersect(A, B) = { 1, 2, 3, 4, 5 } - { 3 } = { 1, 2, 4, 5 }`
+Symmetric difference of A and B equals their union sans their intersection. In our case, this means that  
+`SymmetricDiff(A, B) = Union(A, B) - Intersect(A, B) = { 1, 2, 3, 4, 5 } - { 3 } = { 1, 2, 4, 5 }`
 
 I made that logic apply to these collections too!
 
