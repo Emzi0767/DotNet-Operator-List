@@ -12,7 +12,7 @@ The library is compatible with following versions of .NET Framework:
 
 ## Installation
 
-Install [`Emzi0767.OperatorList`](#NUGET_LINK_HERE) from NuGet.
+Install [`Emzi0767.OperatorList`](https://www.nuget.org/packages/Emzi0767.OperatorList/1.0.0) from NuGet.
 
 ## Usage
 
