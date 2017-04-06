@@ -55,6 +55,8 @@
     <Compile Include="MultiplicationTests.cs" />
     <Compile Include="LogicTests.cs" />
     <Compile Include="BitwiseTests.cs" />
+    <Compile Include="EqualityTests.cs" />
+    <Compile Include="GreatnessTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
