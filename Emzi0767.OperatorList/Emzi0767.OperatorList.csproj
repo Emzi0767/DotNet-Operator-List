@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/Emzi0767/DotNet-Operator-List</RepositoryUrl>
     <PackageTags>list, generic, operators, collection, enumerable, linq</PackageTags>
     <PackageProjectUrl>https://github.com/Emzi0767/DotNet-Operator-List</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Emzi0767/DotNet-Operator-List/blob/master/LICENSE.txt</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
