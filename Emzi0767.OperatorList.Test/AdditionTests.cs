@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Emzi0767.Test
 {
     [TestClass]
-    public class OperatorListTest
+    public class AdditionTests
     {
         [TestMethod]
         [TestCategory("Addition")]
@@ -57,6 +56,26 @@ namespace Emzi0767.Test
                 eq &= list1[i] == array1[i];
 
             Assert.IsTrue(eq);
+        }
+
+        [TestMethod]
+        [TestCategory("Addition")]
+        public void TestAddition3()
+        {
+            var list1 = new OperatorList<string>();
+
+            list1 += "A";
+            list1 += "quick";
+            list1 += "fox";
+            list1 += "jumped";
+            list1 += "over";
+            list1 += "the";
+            list1 += "lazy";
+            list1 += "dog.";
+
+            var str1 = "A quick fox jumped over the lazy dog.";
+
+            Assert.AreEqual(str1, string.Join(" ", list1));
         }
     }
 }
