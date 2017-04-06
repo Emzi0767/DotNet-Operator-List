@@ -3,10 +3,10 @@
 namespace Emzi0767
 {
     [TestClass]
+    [TestCategory("Subtraction")]
     public class SubtractionTests
     {
         [TestMethod]
-        [TestCategory("Subtraction")]
         public void TestSubtraction1()
         {
             var array1 = new[] { 1, 2, 3 };
@@ -28,7 +28,6 @@ namespace Emzi0767
         }
 
         [TestMethod]
-        [TestCategory("Subtraction")]
         public void TestSubtraction2()
         {
             var array1 = new[] { 1, 2, 3 };
@@ -51,7 +50,6 @@ namespace Emzi0767
         }
 
         [TestMethod]
-        [TestCategory("Subtraction")]
         public void TestSubtraction3()
         {
             var str1 = "Quick brown fox jumped over the lazy dog.";

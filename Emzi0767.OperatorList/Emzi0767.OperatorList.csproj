@@ -13,8 +13,8 @@
     <PackageTags>list, generic, operators, collection, enumerable, linq</PackageTags>
     <PackageProjectUrl>https://github.com/Emzi0767/DotNet-Operator-List</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/Emzi0767/DotNet-Operator-List/blob/master/LICENSE.txt</PackageLicenseUrl>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Updated documentation strings.</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Fixed multiplication behaviour.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

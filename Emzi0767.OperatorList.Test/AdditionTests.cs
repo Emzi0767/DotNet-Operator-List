@@ -3,10 +3,10 @@
 namespace Emzi0767.Test
 {
     [TestClass]
+    [TestCategory("Addition")]
     public class AdditionTests
     {
         [TestMethod]
-        [TestCategory("Addition")]
         public void TestAddition1()
         {
             var list1 = new OperatorList<int>();
@@ -28,7 +28,6 @@ namespace Emzi0767.Test
         }
 
         [TestMethod]
-        [TestCategory("Addition")]
         public void TestAddition2()
         {
             var list1 = new OperatorList<int>();
@@ -59,7 +58,6 @@ namespace Emzi0767.Test
         }
 
         [TestMethod]
-        [TestCategory("Addition")]
         public void TestAddition3()
         {
             var list1 = new OperatorList<string>();

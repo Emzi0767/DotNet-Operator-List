@@ -271,7 +271,7 @@ namespace Emzi0767
                 throw new ArgumentOutOfRangeException(nameof(times), "Times needs to be between 1 and maximum integer value.");
 
             var tgt = target.AsEnumerable();
-            for (var i = 0; i < times; i++)
+            for (var i = 0; i < times - 1; i++)
                 tgt = tgt.Concat(target);
 
             return new OperatorList<T>(tgt);
