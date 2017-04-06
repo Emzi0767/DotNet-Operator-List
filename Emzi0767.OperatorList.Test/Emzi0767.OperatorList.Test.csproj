@@ -7,7 +7,7 @@
     <ProjectGuid>{1E7ED176-BF1A-486B-804C-1D644E4F91FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Emzi0767.OperatorList.Test</RootNamespace>
+    <RootNamespace>Emzi0767</RootNamespace>
     <AssemblyName>Emzi0767.OperatorList.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -49,11 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="OperatorListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emzi0767.OperatorList\Emzi0767.OperatorList.csproj">
+      <Project>{28e8047e-5121-4a9b-ae8c-7344292575b4}</Project>
+      <Name>Emzi0767.OperatorList</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
